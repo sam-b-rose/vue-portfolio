@@ -1,6 +1,7 @@
 <template>
   <section id="hero">
-    <div class="hero is-primary header-image">
+    <div class="hero header-image"
+      :class="{ 'is-primary': isPrimary }">
       <div class="hero-head">
         <nav-bar></nav-bar>
       </div>
@@ -34,11 +35,20 @@ export default {
     return {
       title: 'Portfolio',
       subtitle: 'making pretty things with pretty code',
+      isPrimary: true,
     };
+  },
+  methods: {
+    navHandler() {
+      const { innerHeight, scrollY } = window;
+      this.isPrimary = (scrollY + 52) < innerHeight;
+    },
   },
   mounted() {
     sr.reveal('#hero .hero-body > .container *', 100);
     sr.reveal('#hero .hero-foot', 150);
+
+    window.addEventListener('scroll', this.navHandler.bind(this));
   },
 };
 </script>
@@ -48,6 +58,23 @@ export default {
     position: relative;
     height: 100vh;
     width: 100vw;
+  }
+
+  .hero {
+    .nav {
+      background: #fff;
+      position: fixed;
+      left: 0;
+      right: 0;
+      transition: all ease 0.25s;
+    }
+
+    &.is-primary {
+      .nav {
+        background: transparent;
+      }
+    }
+
   }
 
   .header-image {

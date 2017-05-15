@@ -3,7 +3,8 @@
     <div class="container">
       <div class="nav-left">
         <a class="nav-item"
-          href="#">
+          href="#"
+          v-scroll-to="'#hero'">
           <span class="logo-text">{{ logo }}</span>
         </a>
       </div>
@@ -19,7 +20,7 @@
         <a v-for="item in menuItems"
           class="nav-item"
           href="#"
-          @click="goTo(item)">
+          @click.prevent="goTo(item)">
           {{ item.title }}
         </a>
       </div>
@@ -55,9 +56,6 @@ export default {
     };
   },
   methods: {
-    isActive(item) {
-      return this.active === item.title;
-    },
     goTo(item) {
       this.isExpanded = false;
       if (item.url) {
