@@ -7,7 +7,7 @@
     <a class="panel-block"
       href="#"
       v-for="repo in repos"
-      @click.prevent="openDetails"
+      @click.prevent="openDetails(repo)"
       :class="{ 'is-active': false }">
       <span class="panel-icon">
         <i class="fa" :class="repo.type === 'career' ? 'fa-code-fork' : 'fa-book'"></i>
@@ -33,13 +33,12 @@ export default {
     },
   },
   methods: {
-    openDetails() {
+    openDetails(repo) {
       this.$modal.open({
         component: RepoModal,
         width: 640,
         props: {
-          email: this.email,
-          password: this.password,
+          repo,
         },
       });
     },

@@ -1,3 +1,5 @@
+import * as images from '../../assets/img/repos';
+
 const PERSONAL = 'personal';
 const CAREER = 'career';
 
@@ -10,6 +12,8 @@ export default [
     date: new Date(2017, 4, 12),
     type: CAREER,
     url: 'https://gitlab.com/gitlab-org/gitlab-ce',
+    imageSrc: images.GitLabCE,
+    tags: ['ruby', 'rails', 'html', 'css', 'js', 'vue'],
   },
   {
     name: 'GitLab EE',
@@ -18,6 +22,8 @@ export default [
     date: new Date(2017, 3, 28),
     type: CAREER,
     url: 'https://gitlab.com/gitlab-org/gitlab-ee',
+    imageSrc: images.GitLabEE,
+    tags: ['ruby', 'rails', 'html', 'css', 'js', 'vue', 'jquery'],
   },
   {
     name: 'www-gitlab-com',
@@ -26,6 +32,8 @@ export default [
     date: new Date(2017, 3, 28),
     type: CAREER,
     url: 'https://gitlab.com/gitlab-com/www-gitlab-com',
+    imageSrc: images.wwwGitLabCom,
+    tags: ['ruby', 'middleman', 'html', 'css', 'js', 'jquery'],
   },
   {
     name: 'RESolution',
@@ -34,6 +42,8 @@ export default [
     date: new Date(2016, 11, 7),
     type: CAREER,
     url: 'http://web.ornl.gov/RES/',
+    imageSrc: images.RESolution,
+    tags: ['c#', 'html', 'css', 'js', 'angularjs'],
   },
   {
     name: 'Keurig GMCR',
@@ -42,6 +52,8 @@ export default [
     date: new Date(2014, 7, 12),
     type: CAREER,
     url: 'http://www.keuriggreenmountain.com/',
+    imageSrc: images.Keurig,
+    tags: ['C#', 'html', 'css', 'js', 'knockoutjs'],
   },
 
   /* Personal */
@@ -52,6 +64,8 @@ export default [
     date: new Date(2017, 1),
     type: PERSONAL,
     url: 'https://queue.dj',
+    imageSrc: images.queueDj,
+    tags: ['node', 'express', 'firebase', 'twilio', 'soundcloud', 'html', 'css', 'js', 'vue'],
   },
   {
     name: '/dadjokes',
@@ -60,6 +74,8 @@ export default [
     date: new Date(2016, 10),
     type: PERSONAL,
     url: 'https://dadjokes.samrose3.com',
+    imageSrc: images.dadjokes,
+    tags: ['python', 'django', 'postgres', 'reddit', 'html', 'css', 'js', 'react'],
   },
   {
     name: 'eventhunt',
@@ -68,6 +84,8 @@ export default [
     date: new Date(2016, 9),
     type: PERSONAL,
     url: 'https://eventhunt-samrose.herokuapp.com',
+    imageSrc: images.eventhunt,
+    tags: ['python', 'django', 'eventbrite', 'html', 'css', 'js', 'react'],
   },
   {
     name: 'autocomplete-ascii-emoji',
@@ -76,6 +94,8 @@ export default [
     date: new Date(2016, 6),
     type: PERSONAL,
     url: 'https://github.com/samrose3/autocomplete-ascii-emoji',
+    imageSrc: images.autocomplete,
+    tags: ['coffescript'],
   },
   {
     name: 'trex-runner',
@@ -84,6 +104,8 @@ export default [
     date: new Date(2016, 3),
     type: PERSONAL,
     url: 'https://github.com/samrose3/trex-runner',
+    imageSrc: images.TrexRunner,
+    tags: ['vhdl'],
   },
   {
     name: 'StudyLoop',
@@ -92,5 +114,7 @@ export default [
     date: new Date(2016, 0),
     type: PERSONAL,
     url: 'https://github.com/samrose3/studyloop-ios',
+    imageSrc: images.StudyLoop,
+    tags: ['ios', 'swift', 'firebase', 'aws'],
   },
 ];

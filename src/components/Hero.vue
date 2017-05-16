@@ -104,7 +104,7 @@ export default {
     font-size: 36px;
     opacity: 0.6;
     transition: all ease-in 0.15s;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 
     &:hover {
       opacity: 1;

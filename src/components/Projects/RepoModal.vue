@@ -1,29 +1,29 @@
 <template>
   <div class="card">
     <div class="card-image">
-        <figure class="image is-4by3">
-          <img src="http://placehold.it/1280x960" alt="Image">
+        <figure class="image">
+          <img :src="repo.imageSrc || 'http://placehold.it/1280x960'" :alt="repo.name">
         </figure>
     </div>
     <div class="card-content">
       <div class="media">
         <div class="media-left">
             <figure class="image is-48x48">
-            <img src="http://placehold.it/1280x960" alt="Image">
+              <img src="http://placehold.it/48x48" alt="Image">
             </figure>
         </div>
         <div class="media-content">
-            <p class="title is-4">John Smith</p>
-            <p class="subtitle is-6">@johnsmith</p>
+            <p class="title is-4">{{ repo.name }}</p>
+            <p class="subtitle is-6">{{ repo.org }}</p>
         </div>
       </div>
 
       <div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-        <a>#css</a> <a>#responsive</a>
+        [Repo description]
         <br>
-        <small>11:09 PM - 1 Jan 2016</small>
+        <small>{{ repo.date.toDateString() }}</small>
+        <br>
+        <span v-for="tag in repo.tags" class="tag">{{ tag }}</span>
       </div>
     </div>
   </div>
@@ -45,7 +45,7 @@ export default {
   @import '~vars';
 
   .modal-background {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: $white;
   }
 
   .modal-close {
@@ -64,5 +64,17 @@ export default {
 
   .card {
     background-color: transparent;
+  }
+
+  .image img {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin: auto;
+  }
+
+  .tag {
+    margin-right: 0.2rem;
   }
 </style>
