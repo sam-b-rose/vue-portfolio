@@ -4,6 +4,7 @@ import Vue from 'vue';
 import ScrollReveal from 'scrollreveal';
 import VueScrollTo from 'vue-scrollto';
 import Buefy from 'buefy';
+import './assets/styles/main.scss';
 
 import App from './App';
 import Separator from './shared/Separator';

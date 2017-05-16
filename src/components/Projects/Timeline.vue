@@ -12,18 +12,32 @@
     </b-dropdown>
     <hr>
     <p class="event-item" v-for="project in filter(projects)">
-      <span class="icon-item-type">
-        <i class="fa" :class="project.type === 'personal' ? 'fa-book' : 'fa-code-fork'"></i>
-      </span>
-      <a :href="project.orgLink" target="_blank" rel="noopener">{{ project.org }}</a>
-      {{ project.type === 'personal' ? 'created' : 'starred' }}
-      <a :href="project.url" target="_blank" rel="noopener">{{ project.name }}</a>
-      <small>1 hours ago</small>
+
+      <template v-if="project.type === 'career'">
+        <b-icon class="icon-item-type" icon="code-fork" size="is-small" />
+        <a href="#" v-scroll-to="'#about'">Sam</a>
+        worked with
+        <a :href="project.orgLink" target="_blank" rel="noopener"> {{ project.org }}</a>
+        on
+        <a :href="project.url" target="_blank" rel="noopener"> {{ project.name }}</a>
+        <small>{{ timeAgo(project.date) }}</small>
+      </template>
+
+      <template v-else>
+        <b-icon class="icon-item-type" icon="book" size="is-small" />
+        <a :href="project.orgLink" target="_blank" rel="noopener"> {{ project.org }}</a>
+        worked on
+        <a :href="project.url" target="_blank" rel="noopener"> {{ project.name }}</a>
+        <small>{{ timeAgo(project.date) }}</small>
+      </template>
+
     </p>
   </div>
 </template>
 
 <script>
+import moment from 'moment';
+
 export default {
   name: 'timeline',
   props: {
@@ -48,6 +62,9 @@ export default {
           return events.slice().sort((a, b) => (a.date > b.date ? -1 : 1));
       }
     },
+    timeAgo(date) {
+      return moment(date).fromNow();
+    },
   },
 };
 </script>
@@ -58,9 +75,9 @@ export default {
     border-bottom: 1px solid #f1f1f1;
   }
 
-  .icon-item-type i {
-    font-size: 12px;
-    padding: 6px 15px 6px 6px;
+  .icon-item-type {
+    display: inline-block;
+    padding: 6px 24px 6px 6px;
     color: #bbbbbb;
   }
 </style>

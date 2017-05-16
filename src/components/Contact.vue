@@ -1,12 +1,14 @@
 <template>
-  <div id="contact" class="container has-text-centered">
-    <div class="block reveal">
-      <a class="button is-dark"
-        :href="`mailto:${email}`">
-          Ping me
-      </a>
+  <section id="contact" class="section">
+    <div class="container has-text-centered">
+      <div class="block reveal">
+        <a class="button grow is-dark"
+          :href="`mailto:${email}`">
+            Ping me
+        </a>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -22,10 +24,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-  #contact {
-    padding: 5rem;
-  }
-</style>
-

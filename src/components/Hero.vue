@@ -54,6 +54,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '~vars';
+
   #hero {
     position: relative;
     height: 100vh;
@@ -62,7 +64,7 @@ export default {
 
   .hero {
     .nav {
-      background: #fff;
+      background: $white;
       position: fixed;
       left: 0;
       right: 0;
@@ -72,13 +74,13 @@ export default {
     &.is-primary {
       .nav {
         background: transparent;
+        box-shadow: none;
       }
     }
-
   }
 
   .header-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0.89)),url('../assets/img/good-vibes.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)),url('../assets/img/good-vibes.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 50%;

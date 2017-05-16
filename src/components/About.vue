@@ -10,7 +10,7 @@
         I am a full-time undergraduate at The University of Tennessee Knoxville studying Computer Engineering. I have worked with scripting languages such as JavaScript, database fundamentals, and other creative mediums such as photography, videography, and graphic design. I am interested in entrepreneurship, JavaScript, Swift, and UI / UX design.
       </div>
       <div class="block">
-        <a class="button is-dark"
+        <a class="button grow is-dark"
           href="https://samrose3.github.io"
           target="_blank"
           rel="noopener">
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "~bulma/sass/utilities/variables.sass";
+  @import '~vars';
 
   .avatar {
     height: 200px;
@@ -43,7 +43,7 @@ export default {
 
     img {
       border-radius: 200px;
-      border: 3px solid #c5a47e;
+      border: 3px solid $secondary;
     }
   }
 

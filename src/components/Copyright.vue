@@ -47,20 +47,3 @@ export default {
 };
 </script>
 
-<style lang="scss">
-  $social-link: #9A9A9A;
-
- .footer {
-   background-color: #242424;
-   color: $social-link;
-
-   a {
-     color: $social-link;
-     margin: 0 0.5rem;
-
-     &:hover {
-       color: lighten($social-link, 20%);
-     }
-   }
- }
-</style>

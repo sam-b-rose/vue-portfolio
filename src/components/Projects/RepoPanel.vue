@@ -5,11 +5,10 @@
       <span class="repo-count">{{ repos.length }}</span>
     </p>
     <a class="panel-block"
+      href="#"
       v-for="repo in repos"
-      :class="{ 'is-active': false }"
-      :href="repo.url"
-      target="_blank"
-      rel="noopener">
+      @click.prevent="openDetails"
+      :class="{ 'is-active': false }">
       <span class="panel-icon">
         <i class="fa" :class="repo.type === 'career' ? 'fa-code-fork' : 'fa-book'"></i>
       </span>
@@ -19,6 +18,8 @@
 </template>
 
 <script>
+import RepoModal from './RepoModal';
+
 export default {
   name: 'repoPanel',
   props: {
@@ -31,19 +32,33 @@ export default {
       type: Array,
     },
   },
+  methods: {
+    openDetails() {
+      this.$modal.open({
+        component: RepoModal,
+        width: 640,
+        props: {
+          email: this.email,
+          password: this.password,
+        },
+      });
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
+  @import '~vars';
+
   .panel {
     border-radius: 5px;
-    border: 1px solid #d3d6db;
+    border: 1px solid $grey-lighter;
   }
 
   .panel-heading {
     font-size: 1em;
     border: none;
-    border-bottom: 1px solid #d3d6db;
+    border-bottom: 1px solid $grey-lighter;
     border-radius: 4px 4px 0 0;
   }
 
@@ -51,7 +66,15 @@ export default {
     border: none;
 
     &:not(:last-child) {
-      border-bottom: 1px solid #d3d6db;
+      border-bottom: 1px solid $grey-lighter;
+    }
+
+    &:hover,
+    &:focus {
+      color: $primary;
+      .panel-icon {
+        color: $primary;
+      }
     }
   }
 
@@ -61,8 +84,8 @@ export default {
     font-size: 12px;
     font-weight: 600;
     line-height: 1;
-    color: #fff;
-    background-color: rgba(47,54,61,0.5);
+    color: $white;
+    background-color: $grey;
     border-radius: 20px;
   }
 </style>

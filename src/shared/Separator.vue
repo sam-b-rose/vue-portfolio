@@ -10,7 +10,7 @@ export default {
   name: 'separator',
   props: {
     color: {
-      default: '#c5a47e',
+      default: getComputedStyle(document.body).getPropertyValue('--separator-color') || 'white',
       type: String,
     },
   },
@@ -18,12 +18,6 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "~bulma/sass/utilities/variables.sass";
-
-  :root {
-    --separator-color: #c5a47e;
-  }
-
   .separator-container {
     text-align: center;
     position: relative;

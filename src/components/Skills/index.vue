@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import "~bulma/sass/utilities/variables.sass";
+  @import '~vars';
 
   .skills {
     max-width: $desktop;

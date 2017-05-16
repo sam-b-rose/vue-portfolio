@@ -61,6 +61,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '~vars';
+
   .panel-block {
     flex-flow: column nowrap;
     border: none;
@@ -71,8 +73,8 @@ export default {
     }
 
     i {
-      color:#c5a47e;
+      color: $secondary;
+      font-size: 5em;
     }
   }
-
 </style>
