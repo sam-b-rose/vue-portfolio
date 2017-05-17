@@ -4,7 +4,8 @@
       <div class="block reveal">
         <a class="button grow is-dark"
           :href="`mailto:${email}`">
-            Ping me
+            <span>Ping me</span>
+            <b-icon icon="terminal" size="is-small" />
         </a>
       </div>
     </div>

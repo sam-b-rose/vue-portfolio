@@ -4,11 +4,13 @@
   --separator-color: $secondary;
 }
 
-.button.grow {
-  transition: all 0.15s ease;
+.button {
+  &.grow {
+    transition: transform 0.15s ease;
 
-  &:hover {
-    transform: scale(1.1);
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 

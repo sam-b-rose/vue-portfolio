@@ -9,7 +9,7 @@ export default [
   {
     name: 'CSS3',
     image: images.CSS3,
-    url: '',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3',
   },
   {
     name: 'JavaScript',
