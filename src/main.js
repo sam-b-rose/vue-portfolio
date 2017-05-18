@@ -4,6 +4,7 @@ import Vue from 'vue';
 import ScrollReveal from 'scrollreveal';
 import VueScrollTo from 'vue-scrollto';
 import VueAnalytics from 'vue-analytics';
+import VueProgressiveImage from 'vue-progressive-image';
 import Buefy from 'buefy';
 import './assets/styles/main.scss';
 
@@ -18,6 +19,7 @@ Vue.use(VueScrollTo, {
 Vue.use(VueAnalytics, {
   id: 'UA-19428169-1',
 });
+Vue.use(VueProgressiveImage);
 Vue.use(Buefy, {
   defaultIconPack: 'fa',
 });

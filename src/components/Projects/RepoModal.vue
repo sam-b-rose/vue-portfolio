@@ -2,15 +2,17 @@
   <div class="card">
     <div class="card-image">
         <figure class="image">
-          <img :src="repo.imageSrc || 'http://placehold.it/1280x960'" :alt="repo.name">
+          <progressive-img :src="repo.imageSrc"
+            :placeholder="repo.placeholderSrc"
+            :alt="repo.name"/>
         </figure>
     </div>
     <div class="card-content">
       <div class="media">
         <div class="media-left">
             <figure class="image is-48x48">
-              <img v-if="repo.orgImage" :src="repo.orgImage" alt="Image">
-              <b-icon v-else icon="book" size="is-large" />
+              <img v-if="repo.orgImage" :src="repo.orgImage" :alt="repo.org">
+              <span v-else class="icon is-large"><i class="fa fa-book"></i></span>
             </figure>
         </div>
         <div class="media-content">
@@ -38,7 +40,9 @@
           :href="repo.repoUrl"
           target="_blank"
           rel="noopener">
-          <b-icon :icon="repo.repoUrl.includes('://gitlab.') ? 'gitlab' : 'github'" />
+          <span class="icon">
+            <i class="fa" :class="repo.repoUrl.includes('://gitlab.') ? 'fa-gitlab' : 'fa-github'"></i>
+          </span>
         </a>
         <span v-for="tag in repo.tags" class="tag">{{ tag }}</span>
       </div>
