@@ -38,6 +38,10 @@ export default {
           link: 'https://github.com/samrose3',
         },
         {
+          icon: 'gitlab',
+          link: 'https://gitlab.com/samrose3',
+        },
+        {
           icon: 'codepen',
           link: 'https://codepen.io/samrose3',
         },

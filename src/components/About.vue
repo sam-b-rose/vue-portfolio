@@ -14,7 +14,7 @@
           href="https://samrose3.github.io"
           target="_blank"
           rel="noopener">
-          <span>Resuem</span>
+          <span>Resume</span>
           <b-icon icon="file-text-o" size="is-small" />
         </a>
       </div>
