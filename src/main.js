@@ -11,6 +11,7 @@ import './assets/styles/main.scss';
 import App from './App';
 import Separator from './shared/Separator';
 
+Vue.use(VueProgressiveImage);
 Vue.use(VueScrollTo, {
   duration: 1000,
   offset: 0,
@@ -19,7 +20,6 @@ Vue.use(VueScrollTo, {
 Vue.use(VueAnalytics, {
   id: 'UA-19428169-1',
 });
-Vue.use(VueProgressiveImage);
 Vue.use(Buefy, {
   defaultIconPack: 'fa',
 });

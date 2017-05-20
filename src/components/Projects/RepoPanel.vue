@@ -14,6 +14,12 @@
       </span>
       {{ repo.name }}
     </a>
+    <b-modal
+      :active.sync="isComponentModalActive"
+      :component="RepoModal"
+      :props="modalProps"
+      :width="640">
+    </b-modal>
   </nav>
 </template>
 
@@ -32,15 +38,17 @@ export default {
       type: Array,
     },
   },
+  data() {
+    return {
+      RepoModal,
+      isComponentModalActive: false,
+      modalProps: {},
+    };
+  },
   methods: {
     openDetails(repo) {
-      this.$modal.open({
-        component: RepoModal,
-        width: 640,
-        props: {
-          repo,
-        },
-      });
+      this.modalProps = { repo };
+      this.isComponentModalActive = true;
     },
   },
 };
