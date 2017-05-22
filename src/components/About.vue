@@ -7,7 +7,11 @@
       <h2 class="title is-2">About</h2>
       <separator></separator>
       <div class="about-text block">
-        I am a full-time undergraduate at The University of Tennessee Knoxville studying Computer Engineering. I have worked with scripting languages such as JavaScript, database fundamentals, and other creative mediums such as photography, videography, and graphic design. I am interested in entrepreneurship, JavaScript, Swift, and UI / UX design.
+        I am a full-time undergraduate at the
+        <a href="https://utk.edu" target="_blank" rel="noopener">University of Tennessee Knoxville</a>
+        studying computer engineering. I am currently participating in a team-based design internship program call
+        <a href="https://www.ibm.com/design/blog-page.shtml?a-descent-into-the-maelstrom" class="links" target="_blank" rel="noopener">IBM Maelstrom</a>
+        in Austin, TX. I am seeking full-time employment following graduation in December 2017.
       </div>
       <div class="block">
         <a class="button grow is-dark"

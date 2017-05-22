@@ -85,6 +85,22 @@ export default [
 
   /* Personal */
   {
+    name: 'vue-portfolio',
+    org: 'samrose3',
+    orgLink: 'https://github.com/samrose3',
+    orgImage: images.samrose3,
+    date: new Date(2017, 4, 22),
+    type: PERSONAL,
+    url: 'https://samrose.me',
+    repoUrl: 'https://github.com/samrose3/vue-portfolio',
+    imageSrc: images.VuePortfolio,
+    placeholderSrc: placeholders.VuePortfolio,
+    tags: ['node', 'webpack', 'html', 'css', 'js', 'vue', 'bulma'],
+    description: `
+      I wanted a more maintainable way to document and display my work experience and personal projects. After discovering the improved development workflow of using Vue, I was ready to move away from the unmanagable mess of a single-page HTML page and create something that would be easy to improve and update. This portfolio was build from the <a href="#">vue-loader</a> template and utilizes the <a href="#">Bulma</a> CSS framework for consistency and responsiveness. Feel to fork and remix it for your own project."
+    `,
+  },
+  {
     name: 'queue.dj',
     org: 'PartyLab',
     orgLink: 'https://gitlab.com/partylab',

@@ -1,12 +1,13 @@
 <template>
   <div id="app">
-    <hero></hero>
-    <about></about>
-    <do></do>
-    <projects></projects>
-    <skills></skills>
-    <contact></contact>
-    <copyright></copyright>
+    <hero />
+    <about />
+    <do />
+    <projects />
+    <skills />
+    <fork />
+    <contact />
+    <copyright />
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import Do from './components/Do';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import Fork from './components/Fork';
 import Copyright from './components/Copyright';
 
 export default {
@@ -27,6 +29,7 @@ export default {
     Do,
     Projects,
     Skills,
+    Fork,
     Contact,
     Copyright,
   },

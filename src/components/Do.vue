@@ -37,15 +37,15 @@ export default {
         {
           icon: 'fa-graduation-cap',
           title: 'Student',
-          text: 'As a Computer Engineer, I get to learn about the physical hardware and operation of computers which complements my primary interest in software and higher-level development.',
+          text: 'As a computer engineer, I get to learn about the physical hardware and operation of computers which complements my primary interest in software and higher-level development.',
         }, {
           icon: 'fa-code',
           title: 'Developer',
-          text: 'My strengths lie in the frontend development. I have extensive experience with the full stack. Most recently, I have focused progressive web applications build using React or Vue.',
+          text: 'My strengths lie in the front-end development. I have extensive experience with the full stack. Most recently, I have focused on creating progressive web applications build using React and Vue.',
         }, {
           icon: 'fa-pencil',
           title: 'Designer',
-          text: 'My interest in Graphic Design lead me to become a Software Engineer. Good design is essential in crafting elegant and viable solutions.',
+          text: 'My interest in graphic design lead me to become a software engineer. Good design is essential in crafting elegant and viable solutions.',
         }, {
           icon: 'fa-rocket',
           title: 'Starter',
