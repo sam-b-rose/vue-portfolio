@@ -9,13 +9,17 @@
           <h5 class="subtitle is-5">Fork this project on GitHub.</h5>
           <div class="columns is-centered is-vcentered">
             <div class="reveal column is-narrow techs">
-              <img src="../assets/img/skills/vue.png" alt="Vue">
+              <a href="https://vuejs.org/" target="_blank" rel="noopener">
+                <img src="../assets/img/vue.png" alt="Vue">
+              </a>
             </div>
             <div class="reveal column is-narrow">
-              <b-icon icon="plus" size="is-large"/>
+              <span class="plus">+</span>
             </div>
             <div class="reveal column is-narrow techs">
-              <img src="../assets/img/skills/vue.png" alt="Bulma">
+              <a href="http://bulma.io/" target="_blank" rel="noopener">
+                <img src="../assets/img/bulma.png" alt="Bulma">
+              </a>
             </div>
           </div>
           <div class="block reveal">
@@ -24,7 +28,7 @@
               rel="noopener"
               href="https://github.com/samrose3/vue-portfolio">
               <span>Fork</span>
-              <b-icon icon="fork" size="is-small" />
+              <b-icon icon="code-fork" size="is-small" />
             </a>
           </div>
         </div>
@@ -47,7 +51,12 @@ export default {
 <style lang="scss" scoped>
   @import '~vars';
 
-  .icon {
+  .plus {
     color: $white;
+    font-size: 2rem;
+  }
+
+  img {
+    max-height: 100px;
   }
 </style>
