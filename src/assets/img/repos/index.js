@@ -1,4 +1,5 @@
 // Project Images
+export { default as PDFLab } from './pdflab.png';
 export { default as GitLabCE } from './gitlab-ce.png';
 export { default as GitLabEE } from './gitlab-ee.png';
 export { default as wwwGitLabCom } from './www-gitlab-com.png';

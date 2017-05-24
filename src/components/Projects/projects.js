@@ -39,6 +39,22 @@ export default [
     `,
   },
   {
+    name: 'PDFLab',
+    org: 'GitLab',
+    orgLink: 'https://about.gitlab.com',
+    orgImage: images.GitLab,
+    date: new Date(2017, 4, 11),
+    type: CAREER,
+    url: 'https://gitlab.com/samrose3/pdflab/blob/master/README.md',
+    repoUrl: 'https://gitlab.com/samrose3/pdflab',
+    imageSrc: images.PDFLab,
+    placeholderSrc: placeholders.PDFLab,
+    tags: ['html', 'js', 'vue'],
+    description: `
+      PDFLab is a Vue component that makes it easy to render PDF files. It's as simple as passing in the URL of the PDF or the file data and the component renders. Powered by the awesomeness of <a href="https://mozilla.github.io/pdf.js/" target="_blank" rel="noopener">pdf.js</a> ✨
+    `,
+  },
+  {
     name: 'www-gitlab-com',
     org: 'GitLab',
     orgLink: 'https://about.gitlab.com',
