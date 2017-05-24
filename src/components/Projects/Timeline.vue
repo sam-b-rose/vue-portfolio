@@ -70,6 +70,17 @@ export default {
 </script>
 
 <style lang="scss">
+  @import '~vars';
+
+  .option .icon .fa {
+    font-size: $size-7;
+  }
+
+  .dropdown .box .option.is-selected {
+    color: $primary;
+    background: transparent !important;
+  }
+
   .event-item {
     padding: 10px 10px 10px 0;
     border-bottom: 1px solid #f1f1f1;

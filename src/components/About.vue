@@ -9,7 +9,9 @@
       <div class="about-text block">
         I am a full-time undergraduate at the
         <a href="https://utk.edu" target="_blank" rel="noopener">University of Tennessee Knoxville</a>
-        studying computer engineering. I am currently participating in a team-based design internship program call
+        studying
+        <a href="http://catalog.utk.edu/preview_program.php?catoid=20&poid=8409" target="_blank" rel="noopener">Computer Engineering</a>
+        . I am currently participating in a team-based design internship call
         <a href="https://www.ibm.com/design/blog-page.shtml?a-descent-into-the-maelstrom" class="links" target="_blank" rel="noopener">IBM Maelstrom</a>
         in Austin, TX. I am seeking full-time employment following graduation in December 2017.
       </div>
