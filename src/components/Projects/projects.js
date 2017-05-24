@@ -146,7 +146,7 @@ export default [
     placeholderSrc: placeholders.eventhunt,
     tags: ['python', 'django', 'eventbrite', 'html', 'css', 'js', 'react'],
     description: `
-      Filer by categories of interest to find the right events for you in your area. This is a web app in progress. I created it for learning purposes, to practice and experiment with a Django and React stack. I've enjoyed working with the combination and find the development workflow to be my favorite so far.`,
+      Filter by categories of interest to find the right events for you in your area. This is a web app in progress. I created it for learning purposes, to practice and experiment with a Django and React stack. I've enjoyed working with the combination and find the development workflow to be my favorite so far.`,
   },
   {
     name: 'autocomplete-ascii-emoji',
