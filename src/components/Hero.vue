@@ -5,7 +5,7 @@
       <div class="hero-head">
         <nav-bar></nav-bar>
       </div>
-      <div class="hero-body">
+      <div class="hero-body" ref="heroBody">
         <div class="container has-text-centered">
           <h1 class="title is-1">{{ title }}</h1>
           <separator color="white"></separator>
@@ -35,19 +35,30 @@ export default {
     return {
       title: 'Portfolio',
       subtitle: 'making pretty things with pretty code',
+      navHeight: 52,
       isPrimary: true,
     };
+  },
+  watch: {
+    navHeight(height) {
+      this.$refs.heroBody.style.paddingTop = `calc(1rem + ${height}px)`;
+    },
   },
   methods: {
     navHandler() {
       const { innerHeight, scrollY } = window;
-      this.isPrimary = (scrollY + 52) < innerHeight;
+      this.isPrimary = (scrollY + this.navHeight) < innerHeight;
     },
+    setNavHeight(height) {
+      this.navHeight = height;
+    },
+  },
+  created() {
+    Event.$on('setNavHeight', this.setNavHeight);
   },
   mounted() {
     sr.reveal('#hero .hero-body > .container *', 100);
     sr.reveal('#hero .hero-foot', 150);
-
     window.addEventListener('scroll', this.navHandler.bind(this));
   },
 };
