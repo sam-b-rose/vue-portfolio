@@ -10,8 +10,14 @@
           <timeline :projects="projects"></timeline>
         </div>
         <div class="column is-4">
-          <repo-panel title="Repositories contributed to" :repos="career"></repo-panel>
-          <repo-panel title="Sam's repositories" :repos="personal"></repo-panel>
+          <repo-panel
+            title="Repositories contributed to"
+            :repos="career"
+            :preload="preload" />
+          <repo-panel
+            title="Sam's repositories"
+            :repos="personal"
+            :preload="preload" />
         </div>
       </div>
     </div>
@@ -33,6 +39,7 @@ export default {
   data() {
     return {
       projects,
+      preload: false,
     };
   },
   computed: {
@@ -42,6 +49,17 @@ export default {
     personal() {
       return projects.filter(p => p.type === 'personal');
     },
+  },
+  methods: {
+    setPreload() {
+      const { scrollY } = window;
+      if (scrollY >= this.$el.offsetTop) {
+        this.preload = true;
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.setPreload);
   },
 };
 </script>

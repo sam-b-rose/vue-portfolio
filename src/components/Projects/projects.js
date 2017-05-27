@@ -123,7 +123,7 @@ export default [
     date: new Date(2017, 4),
     type: PERSONAL,
     url: 'https://queue.dj',
-    repoUrl: 'https://gitlab.com/partylab/queuedj',
+    repoUrl: 'https://gitlab.com/partylab/queue-dj',
     imageSrc: images.queueDj,
     placeholderSrc: placeholders.queueDj,
     tags: ['node', 'express', 'firebase', 'twilio', 'soundcloud', 'html', 'css', 'js', 'vue'],

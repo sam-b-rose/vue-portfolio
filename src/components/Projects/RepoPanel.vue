@@ -37,6 +37,10 @@ export default {
       required: true,
       type: Array,
     },
+    preload: {
+      required: false,
+      type: Boolean,
+    },
   },
   data() {
     return {
@@ -45,10 +49,20 @@ export default {
       modalProps: {},
     };
   },
+  watch: {
+    preload: 'preloadPlaceholders',
+  },
   methods: {
     openDetails(repo) {
       this.modalProps = { repo };
       this.isComponentModalActive = true;
+    },
+    preloadPlaceholders() {
+      if (!this.preload) return;
+      this.repos.forEach((repo) => {
+        const placeholder = new Image();
+        placeholder.src = repo.placeholderSrc;
+      });
     },
   },
 };
