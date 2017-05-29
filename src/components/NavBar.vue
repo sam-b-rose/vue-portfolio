@@ -65,9 +65,6 @@ export default {
       }
     },
   },
-  mounted() {
-    Event.$emit('setNavHeight', this.$el.offsetHeight);
-  },
 };
 </script>
 

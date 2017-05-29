@@ -25,7 +25,6 @@ Vue.use(Buefy, {
 });
 
 window.sr = ScrollReveal();
-window.Event = new Vue();
 Vue.component('separator', Separator);
 
 new Vue({

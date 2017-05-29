@@ -22,7 +22,6 @@
     }]
   },
   "globals": {
-    "sr": true,
-    "Event": true
+    "sr": true
   }
 }
