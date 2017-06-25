@@ -4,6 +4,13 @@
   --separator-color: $secondary;
 }
 
+body {
+  &.modal-open {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
 .button {
   &.grow {
     transition: transform 0.15s ease;

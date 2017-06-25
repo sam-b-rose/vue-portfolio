@@ -11,7 +11,10 @@ import './assets/styles/main.scss';
 import App from './App';
 import Separator from './shared/Separator';
 
-Vue.use(VueProgressiveImage);
+Vue.use(VueProgressiveImage, {
+  blur: 8,
+  delay: 500,
+});
 Vue.use(VueScrollTo, {
   duration: 1000,
   offset: 0,

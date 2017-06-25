@@ -4,7 +4,7 @@
         <figure class="image">
           <progressive-img :src="repo.imageSrc"
             :placeholder="repo.placeholderSrc"
-            :alt="repo.name"/>
+            :alt="repo.name"></progressive-img>
         </figure>
     </div>
     <div class="card-content">
@@ -44,7 +44,11 @@
             <i class="fa" :class="repo.repoUrl.includes('://gitlab.') ? 'fa-gitlab' : 'fa-github'"></i>
           </span>
         </a>
-        <span v-for="tag in repo.tags" class="tag">{{ tag }}</span>
+        <span class="tag"
+          v-for="tag in repo.tags"
+          :key="tag">
+            {{ tag }}
+        </span>
       </div>
     </div>
   </div>

@@ -6,7 +6,8 @@
     </p>
     <a class="panel-block"
       href="#"
-      v-for="repo in repos"
+      v-for="(repo, index) in repos"
+      :key="index"
       @click.prevent="openDetails(repo)"
       :class="{ 'is-active': false }">
       <span class="panel-icon">
@@ -47,22 +48,24 @@ export default {
       RepoModal,
       isComponentModalActive: false,
       modalProps: {},
+      scrollPos: 0,
     };
-  },
-  watch: {
-    preload: 'preloadPlaceholders',
   },
   methods: {
     openDetails(repo) {
       this.modalProps = { repo };
       this.isComponentModalActive = true;
     },
-    preloadPlaceholders() {
-      if (!this.preload) return;
-      this.repos.forEach((repo) => {
-        const placeholder = new Image();
-        placeholder.src = repo.placeholderSrc;
-      });
+  },
+  watch: {
+    isComponentModalActive(isActive) {
+      if (isActive) {
+        this.scrollPos = window.scrollY;
+        setTimeout(() => document.body.classList.add('modal-open'), 250);
+      } else {
+        document.body.classList.remove('modal-open');
+        window.scrollTo(0, this.scrollPos);
+      }
     },
   },
 };
