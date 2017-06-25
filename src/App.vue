@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <hero />
-    <about />
-    <do />
-    <projects />
-    <skills />
-    <fork />
-    <contact />
-    <copyright />
+    <hero></hero>
+    <about></about>
+    <do></do>
+    <projects></projects>
+    <skills></skills>
+    <fork></fork>
+    <contact></contact>
+    <copyright></copyright>
   </div>
 </template>
 

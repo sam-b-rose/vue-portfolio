@@ -8,7 +8,8 @@
       </div>
       <div class="skills columns is-multiline is-mobile">
         <div class="column is-narrow"
-          v-for="skill in skills">
+          v-for="(skill, index) in skills"
+          :key="index">
           <div class="skill">
             <a class="image"
               target="_blank"
