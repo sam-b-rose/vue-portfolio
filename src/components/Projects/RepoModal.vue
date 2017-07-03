@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" v-show="contentReady">
     <div class="card-image">
         <figure class="image">
           <progressive-img :src="repo.imageSrc"
@@ -59,6 +59,12 @@ import moment from 'moment';
 
 export default {
   name: 'repoModal',
+  data() {
+    return {
+      placeholder: null,
+      contentReady: false,
+    };
+  },
   props: {
     repo: {
       type: Object,
@@ -69,6 +75,14 @@ export default {
     formatDate(date) {
       return moment(date).format('MMM YYYY');
     },
+    displayContent(showContent = true) {
+      this.contentReady = showContent;
+    },
+  },
+  mounted() {
+    this.placeholder = new Image();
+    this.placeholder.src = this.repo.placeholderSrc;
+    this.placeholder.onload = setTimeout(this.displayContent, 100);
   },
 };
 </script>
@@ -82,6 +96,8 @@ export default {
 
   .modal-close {
     transition: background-color 0.25s ease;
+    max-height: 40px;
+    max-width: 40px;
 
     &:before,
     &:after {

@@ -13,7 +13,7 @@ import Separator from './shared/Separator';
 
 Vue.use(VueProgressiveImage, {
   blur: 8,
-  delay: 500,
+  delay: 300,
 });
 Vue.use(VueScrollTo, {
   duration: 1000,
