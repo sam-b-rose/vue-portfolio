@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" v-cloak>
     <hero></hero>
     <about></about>
     <do></do>
