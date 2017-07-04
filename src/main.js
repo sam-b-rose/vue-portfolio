@@ -6,6 +6,7 @@ import VueScrollTo from 'vue-scrollto';
 import VueAnalytics from 'vue-analytics';
 import VueProgressiveImage from 'vue-progressive-image';
 import Buefy from 'buefy';
+import 'core-js';
 import './assets/styles/main.scss';
 
 import App from './App';
