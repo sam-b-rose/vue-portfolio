@@ -13,7 +13,7 @@
     "core-js": "^2.4.1",
     "moment": "^2.18.1",
     "scrollreveal": "^3.3.5",
-    "vue": "^2.2.2",
+    "vue": "^2.3.4",
     "vue-analytics": "^4.1.2",
     "vue-progressive-image": "^2.0.0",
     "vue-scrollto": "^2.6.8"
@@ -58,7 +58,7 @@
     "url-loader": "^0.5.8",
     "vue-loader": "^11.1.4",
     "vue-style-loader": "^2.0.0",
-    "vue-template-compiler": "^2.2.4",
+    "vue-template-compiler": "^2.3.4",
     "webpack": "^2.2.1",
     "webpack-bundle-analyzer": "^2.2.1",
     "webpack-dev-middleware": "^1.10.0",
