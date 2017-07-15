@@ -2,9 +2,9 @@
   <div class="card" v-show="contentReady">
     <div class="card-image">
         <figure class="image">
-          <progressive-img :src="repo.imageSrc"
-            :placeholder="repo.placeholderSrc"
-            :alt="repo.name"></progressive-img>
+          <img :src="repo.imageSrc"
+            :alt="repo.name"
+            :srcset="`${repo.imageSrc} 640w`"></img>
         </figure>
     </div>
     <div class="card-content">

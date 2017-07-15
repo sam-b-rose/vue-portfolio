@@ -4,7 +4,6 @@ import Vue from 'vue';
 import ScrollReveal from 'scrollreveal';
 import VueScrollTo from 'vue-scrollto';
 import VueAnalytics from 'vue-analytics';
-import VueProgressiveImage from 'vue-progressive-image';
 import Buefy from 'buefy';
 import 'core-js';
 import './assets/styles/main.scss';
@@ -12,10 +11,6 @@ import './assets/styles/main.scss';
 import App from './App';
 import Separator from './shared/Separator';
 
-Vue.use(VueProgressiveImage, {
-  blur: 8,
-  delay: 300,
-});
 Vue.use(VueScrollTo, {
   duration: 1000,
   offset: 0,
