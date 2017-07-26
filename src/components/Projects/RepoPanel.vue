@@ -61,7 +61,7 @@ export default {
     isComponentModalActive(isActive) {
       if (isActive) {
         this.scrollPos = window.scrollY;
-        setTimeout(() => document.body.classList.add('modal-open'), 250);
+        setTimeout(() => document.body.classList.add('modal-open'), 500);
       } else {
         document.body.classList.remove('modal-open');
         window.scrollTo(0, this.scrollPos);

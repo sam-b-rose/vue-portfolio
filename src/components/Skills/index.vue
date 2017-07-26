@@ -7,7 +7,7 @@
         <h5 class="subtitle is-5">Technologies I work in most frequently.</h5>
       </div>
       <div class="skills columns is-multiline is-mobile">
-        <div class="column is-narrow"
+        <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop"
           v-for="(skill, index) in skills"
           :key="index">
           <div class="skill">
