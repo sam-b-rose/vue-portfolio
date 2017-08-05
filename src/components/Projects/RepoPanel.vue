@@ -30,15 +30,20 @@ export default {
       required: true,
       type: Array,
     },
-    preload: {
-      required: false,
-      type: Boolean,
-    },
   },
   methods: {
     openDetails(repo) {
       this.$store.commit('setModalData', repo);
     },
+    preloadImages() {
+      this.repos.forEach((repo) => {
+        const img = new Image();
+        img.src = repo.imageSrc;
+      });
+    },
+  },
+  mounted() {
+    this.preloadImages();
   },
 };
 </script>

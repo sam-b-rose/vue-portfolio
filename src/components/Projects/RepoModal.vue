@@ -2,7 +2,7 @@
   <transition name="slide-fade">
     <div class="modal" v-if="repo">
       <div class="modal-background" @click.self="closeModal">
-        <div class="modal-close" @click.self="closeModal"></div>
+        <div class="modal-close" @click="closeModal"></div>
         <div class="card">
           <div class="card-image"></div>
               <figure class="image">
@@ -130,11 +130,15 @@ export default {
   .card {
     background-color: transparent;
     box-shadow: none;
-    max-width: 50%;
+    max-width: 45%;
     margin: 0 auto;
 
+    @media screen and (max-width: $desktop) {
+      max-width: 70%;
+    }
+
     @media screen and (max-width: $tablet) {
-      max-width: 80%;
+      max-width: 85%;
     }
   }
 
