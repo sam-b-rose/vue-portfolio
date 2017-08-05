@@ -11,7 +11,9 @@
       <b-dropdown-option value="Personal" icon="book">Personal</b-dropdown-option>
     </b-dropdown>
     <hr>
-    <p class="event-item" v-for="project in filter(projects)">
+    <p class="event-item"
+      v-for="project in filter(projects)"
+      :key="project.name">
 
       <template v-if="project.type === 'career'">
         <b-icon class="icon-item-type" icon="code-fork" size="is-small" />

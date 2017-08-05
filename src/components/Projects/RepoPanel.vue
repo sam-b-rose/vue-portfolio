@@ -15,18 +15,10 @@
       </span>
       {{ repo.name }}
     </a>
-    <b-modal
-      :active.sync="isComponentModalActive"
-      :component="RepoModal"
-      :props="modalProps"
-      :width="640">
-    </b-modal>
   </nav>
 </template>
 
 <script>
-import RepoModal from './RepoModal';
-
 export default {
   name: 'repoPanel',
   props: {
@@ -43,29 +35,9 @@ export default {
       type: Boolean,
     },
   },
-  data() {
-    return {
-      RepoModal,
-      isComponentModalActive: false,
-      modalProps: {},
-      scrollPos: 0,
-    };
-  },
   methods: {
     openDetails(repo) {
-      this.modalProps = { repo };
-      this.isComponentModalActive = true;
-    },
-  },
-  watch: {
-    isComponentModalActive(isActive) {
-      if (isActive) {
-        this.scrollPos = window.scrollY;
-        setTimeout(() => document.body.classList.add('modal-open'), 500);
-      } else {
-        document.body.classList.remove('modal-open');
-        window.scrollTo(0, this.scrollPos);
-      }
+      this.$store.commit('setModalData', repo);
     },
   },
 };
