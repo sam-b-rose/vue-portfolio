@@ -12,7 +12,6 @@
     "buefy": "^0.3.2",
     "core-js": "^2.4.1",
     "moment": "^2.18.1",
-    "nprogress": "^0.2.0",
     "scrollreveal": "^3.3.5",
     "vue": "^2.3.4",
     "vue-analytics": "^4.1.2",

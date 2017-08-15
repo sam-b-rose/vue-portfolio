@@ -5,9 +5,7 @@ import ScrollReveal from 'scrollreveal';
 import VueScrollTo from 'vue-scrollto';
 import VueAnalytics from 'vue-analytics';
 import Buefy from 'buefy';
-import NProgress from 'nprogress';
 import 'core-js';
-
 import './assets/styles/main.scss';
 
 import App from './App';
@@ -26,14 +24,7 @@ Vue.use(Buefy, {
   defaultIconPack: 'fa',
 });
 
-NProgress.configure({
-  showSpinner: false,
-});
-NProgress.start();
-
 window.sr = ScrollReveal();
-window.onload = setTimeout(() => { NProgress.done(); }, 1000);
-
 Vue.component('separator', Separator);
 
 new Vue({
