@@ -4,12 +4,13 @@
       <div class="modal-background" @click.self="closeModal">
         <div class="modal-close" @click="closeModal"></div>
         <div class="card">
-          <div class="card-image"></div>
-              <figure class="image">
-              <img :src="repo.imageSrc"
-                  :srcset="`${repo.imageSrc} 640w`"
-                  :alt="repo.name"></img>
-              </figure>
+          <div class="card-image">
+            <figure class="image">
+            <img :src="repo.imageSrc"
+                :srcset="`${repo.imageSrc} 640w`"
+                :alt="repo.name"></img>
+            </figure>
+          </div>
           <div class="card-content">
             <div class="media">
               <div class="media-left">
