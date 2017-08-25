@@ -118,7 +118,7 @@ export default [
     imageSrc: images.queueDj,
     projectImage: projectImages.queueDj,
     placeholderSrc: placeholders.queueDj,
-    tags: ['node', 'express', 'firebase', 'twilio', 'soundcloud', 'html', 'css', 'js', 'vue'],
+    tags: ['express', 'firebase', 'twilio', 'soundcloud', 'html', 'css', 'vue'],
     description: `
       Queue DJ is an audio queuing service that allows the audience to participate. The host or DJ can compose the perfect queue of music to be streamed for an event while also receiving real-time feedback and suggestions from the audience. Queue DJ amplifies the voice of the audience, providing a non-disruptive experience for the DJ and an easy interaction for the audience - a win-win for both the DJ and the audience. The music for Queue DJ is from SoundCloud, which provides free access to a wide range of music.\n
       Everyone can participate in the party! Crowd DJ-ing has never been easier. No logins, no downloads or configurations, and more time to party.
@@ -155,7 +155,7 @@ export default [
     placeholderSrc: placeholders.VuePortfolio,
     tags: ['node', 'webpack', 'html', 'css', 'js', 'vue', 'bulma'],
     description: `
-      I wanted a more maintainable way to document and display my work experience and personal projects. After discovering the improved development workflow of using Vue, I was ready to move away from the unmanagable mess of a single-page HTML page and create something that would be easy to improve and update. This portfolio was build from the <a href="#">vue-loader</a> template and utilizes the <a href="#">Bulma</a> CSS framework for consistency and responsiveness. Feel to fork and remix it for your own project."
+      I wanted a more maintainable way to document and display my work experience and personal projects. After discovering the improved development workflow of using Vue, I was ready to move away from the unmanagable mess of a single-page HTML page and create something that would be easy to improve and update. This portfolio was build from the <a href="#">vue-loader</a> template and utilizes the <a href="#">Bulma</a> CSS framework for consistency and responsiveness. Feel to fork and remix it for your own project.
     `,
   },
   {

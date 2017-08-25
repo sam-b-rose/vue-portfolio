@@ -118,7 +118,7 @@ export default {
   }
 
   .details {
-    background: rgba($white, 0.85);
+    background: rgba($white, 0.87);
     position: absolute;
     height: 100%;
     width: 100vw;
