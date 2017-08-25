@@ -38,7 +38,9 @@ export default {
     preloadImages() {
       this.repos.forEach((repo) => {
         const img = new Image();
+        const projImg = new Image();
         img.src = repo.imageSrc;
+        projImg.src = repo.projectImage;
       });
     },
   },

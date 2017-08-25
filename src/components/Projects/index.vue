@@ -22,7 +22,8 @@
       <div class="column is-3 is-offset-1 js-project-list">
         <project-list :projects="projects"></project-list>
       </div>
-      <div class="column">
+      <div class="column details"
+        :class="{ active: showDetails }">
         <project-details></project-details>
       </div>
     </div>
@@ -72,7 +73,10 @@ export default {
     };
   },
   computed: {
-    ...mapState(['activeProject']),
+    ...mapState([
+      'activeProject',
+      'showDetails',
+    ]),
     career() {
       return projects.filter(p => p.type === 'career');
     },
@@ -85,6 +89,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '~vars';
+@import '~bulma/sass/utilities/mixins';
 
 .section.no-h-padding {
   padding: 3rem 0;
@@ -103,12 +108,23 @@ export default {
   position: relative;
   background-color: $dark;
 
-
   & > .column {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
+  }
+  .details {
+    &.active {
+      @include mobile {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+      }
+    }
   }
 }
 </style>

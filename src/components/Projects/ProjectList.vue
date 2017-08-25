@@ -43,9 +43,14 @@ export default {
 
 <style lang="scss">
 @import '~vars';
+@import '~bulma/sass/utilities/mixins';
 
 .project-list {
   padding: 1.5rem 0;
+
+  @include mobile {
+      padding: 1.5rem 1rem;
+  }
 
   .project {
     padding: 0.5rem 1rem;
