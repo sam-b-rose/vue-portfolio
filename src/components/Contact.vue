@@ -4,9 +4,7 @@
       <h2 class="title is-2">Contact</h2>
       <separator></separator>
       <h5 class="subtitle is-5">
-        Looking for cool development opportunties and friendly hello's
-        <br>
-        <small>... preferably the first but both are good 😅</small>
+        Looking for cool development opportunties and friendly hello's 👋
       </h5>
       <div class="block reveal">
         <a class="button grow is-dark"
