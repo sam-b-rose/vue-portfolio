@@ -3,9 +3,9 @@
 import Vue from 'vue';
 import ScrollReveal from 'scrollreveal';
 import VueScrollTo from 'vue-scrollto';
-import VueAnalytics from 'vue-analytics';
 import Buefy from 'buefy';
 import moment from 'moment';
+
 import 'core-js';
 import './assets/styles/main.scss';
 
@@ -13,16 +13,11 @@ import App from './App';
 import store from './stores';
 import Separator from './shared/Separator';
 
+Vue.use(Buefy, { defaultIconPack: 'fa' });
 Vue.use(VueScrollTo, {
   duration: 1000,
   offset: 0,
   easing: 'ease-in-out',
-});
-Vue.use(VueAnalytics, {
-  id: 'UA-19428169-1',
-});
-Vue.use(Buefy, {
-  defaultIconPack: 'fa',
 });
 
 window.sr = ScrollReveal();
