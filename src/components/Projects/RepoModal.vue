@@ -6,8 +6,8 @@
         <div class="card">
           <div class="card-image">
             <figure class="image">
-            <img :src="repo.imageSrc"
-                :srcset="`${repo.imageSrc} 640w`"
+            <img :src="repoImgUrl"
+                :srcset="`${repoImgUrl} 640w`"
                 :alt="repo.name"></img>
             </figure>
           </div>
@@ -76,6 +76,9 @@ export default {
     ...mapState({
       repo: 'modalData',
     }),
+    repoImgUrl() {
+      return cl.url(this.repo.imageSrc);
+    },
   },
   methods: {
     formatDate(date) {

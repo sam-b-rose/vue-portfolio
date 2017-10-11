@@ -1,6 +1,4 @@
 import * as images from '../../assets/img/repos';
-import * as projectImages from '../../assets/img/projects';
-import * as placeholders from '../../assets/img/repos/placeholders';
 
 const PERSONAL = 'personal';
 const CAREER = 'career';
@@ -16,9 +14,8 @@ export default [
     type: CAREER,
     url: 'https://about.gitlab.com/features/#ee-premium',
     repoUrl: 'https://gitlab.com/gitlab-org/gitlab-ee',
-    imageSrc: images.GitLabEE,
-    projectImage: projectImages.GitLabEE,
-    placeholderSrc: placeholders.GitLabEE,
+    imageSrc: 'gitlab-ee-repo.png',
+    projectImage: 'gitlab-ee.png',
     tags: ['ruby', 'rails', 'html', 'css', 'js', 'vue', 'jquery'],
     description: `
       GitLab is an online Git repository manager with a wiki, issue tracking, CI and CD. It is a great way to manage git repositories on a centralized server. GitLab gives you complete control over your repositories or projects and allows you to decide whether they are public or private for free.
@@ -33,9 +30,8 @@ export default [
     type: CAREER,
     url: 'https://about.gitlab.com/features/#ce',
     repoUrl: 'https://gitlab.com/gitlab-org/gitlab-ce',
-    imageSrc: images.GitLabCE,
-    projectImage: projectImages.GitLabCE,
-    placeholderSrc: placeholders.GitLabCE,
+    imageSrc: 'gitlab-ce-repo.png',
+    projectImage: 'gitlab-ce.png',
     tags: ['ruby', 'rails', 'html', 'css', 'js', 'vue'],
     description: `
       GitLab is an online Git repository manager with a wiki, issue tracking, CI and CD. It is a great way to manage git repositories on a centralized server. GitLab gives you complete control over your repositories or projects and allows you to decide whether they are public or private for free.
@@ -50,9 +46,8 @@ export default [
     type: CAREER,
     url: 'https://gitlab.com/samrose3/pdflab/blob/master/README.md',
     repoUrl: 'https://gitlab.com/samrose3/pdflab',
-    imageSrc: images.PDFLab,
-    projectImage: projectImages.PDFLab,
-    placeholderSrc: placeholders.PDFLab,
+    imageSrc: 'pdflab-repo.png',
+    projectImage: 'pdflab.png',
     tags: ['html', 'js', 'vue'],
     description: `
       PDFLab is a Vue component that makes it easy to render PDF files. It's as simple as passing in the URL of the PDF or the file data and the component renders. Powered by the awesomeness of <a href="https://mozilla.github.io/pdf.js/" target="_blank" rel="noopener">pdf.js</a> ✨
@@ -67,9 +62,8 @@ export default [
     type: CAREER,
     url: 'https://about.gitlab.com',
     repoUrl: 'https://gitlab.com/gitlab-com/www-gitlab-com',
-    imageSrc: images.wwwGitLabCom,
-    projectImage: projectImages.wwwGitLabCom,
-    placeholderSrc: placeholders.wwwGitLabCom,
+    imageSrc: 'www-gitlab-com.png',
+    projectImage: 'gitlab-com.png',
     tags: ['ruby', 'middleman', 'html', 'css', 'js', 'jquery'],
     description: 'The landing and infomation site for GitLab.',
   },
@@ -81,9 +75,8 @@ export default [
     date: new Date(2016, 11, 7),
     type: CAREER,
     url: 'http://web.ornl.gov/RES/',
-    imageSrc: images.RESolution,
-    projectImage: projectImages.RESolution,
-    placeholderSrc: placeholders.RESolution,
+    imageSrc: 'res-repo.png',
+    projectImage: 'res.jpg',
     tags: ['c#', 'html', 'css', 'js', 'angularjs'],
     description: `
       Played key role in development of AngularJS ASP.NET web app for Oak Ridge National Labs. Project involved highly customize UI and responsive design, requiring extensive knowledge of application architecture, component-based layout, and mobile design.
@@ -97,9 +90,8 @@ export default [
     date: new Date(2014, 7, 12),
     type: CAREER,
     url: 'http://www.keuriggreenmountain.com/',
-    imageSrc: images.Keurig,
-    projectImage: projectImages.Keurig,
-    placeholderSrc: placeholders.Keurig,
+    imageSrc: 'keurig.jpg',
+    projectImage: 'keurig.jpg',
     tags: ['C#', 'html', 'css', 'js', 'knockoutjs'],
     description: `
       Designed and developed scheduling application for the production of Keurig K-Cups at Keurig Green Mountain factory in Knoxville. Software used custom predictive algorithm to optimize K-Cup production and minimize assembly line overhead
@@ -115,9 +107,8 @@ export default [
     type: PERSONAL,
     url: 'https://queue.dj',
     repoUrl: 'https://gitlab.com/partylab/queue-dj',
-    imageSrc: images.queueDj,
-    projectImage: projectImages.queueDj,
-    placeholderSrc: placeholders.queueDj,
+    imageSrc: 'queue-dj-repo.png',
+    projectImage: 'queue-dj.png',
     tags: ['express', 'firebase', 'twilio', 'soundcloud', 'html', 'css', 'vue'],
     description: `
       Queue DJ is an audio queuing service that allows the audience to participate. The host or DJ can compose the perfect queue of music to be streamed for an event while also receiving real-time feedback and suggestions from the audience. Queue DJ amplifies the voice of the audience, providing a non-disruptive experience for the DJ and an easy interaction for the audience - a win-win for both the DJ and the audience. The music for Queue DJ is from SoundCloud, which provides free access to a wide range of music.\n
@@ -133,9 +124,8 @@ export default [
     type: PERSONAL,
     url: 'https://github.com/samrose3/studyloop-ios',
     repoUrl: 'https://github.com/samrose3/studyloop-ios',
-    imageSrc: images.StudyLoop,
-    projectImage: projectImages.StudyLoop,
-    placeholderSrc: placeholders.StudyLoop,
+    imageSrc: 'studyloop-repo.png',
+    projectImage: 'studyloop.jpg',
     tags: ['ios', 'swift', 'firebase', 'aws'],
     description: `
       StudyLoop is a group messaging app for your college classes. Instantly get help from other students in your class. Immediately reach all your classmates with organized, collaborative messaging. Simply select your university and add the courses you are in for the semester. Conversations are organized by assignment into what are called Loops. Create and join Loops within a course to discuss focused topics such as Homework #2 or Exam 1 Review. Message classmates within each loop. Send photo attachments, emojis, and links.
@@ -150,9 +140,8 @@ export default [
     type: PERSONAL,
     url: 'https://samrose.me',
     repoUrl: 'https://github.com/samrose3/vue-portfolio',
-    imageSrc: images.VuePortfolio,
-    projectImage: projectImages.VuePortfolio,
-    placeholderSrc: placeholders.VuePortfolio,
+    imageSrc: 'vue-portfolio-repo.png',
+    projectImage: 'vue-portfolio.png',
     tags: ['node', 'webpack', 'html', 'css', 'js', 'vue', 'bulma'],
     description: `
       I wanted a more maintainable way to document and display my work experience and personal projects. After discovering the improved development workflow of using Vue, I was ready to move away from the unmanagable mess of a single-page HTML page and create something that would be easy to improve and update. This portfolio was build from the <a href="#">vue-loader</a> template and utilizes the <a href="#">Bulma</a> CSS framework for consistency and responsiveness. Feel to fork and remix it for your own project.
@@ -167,9 +156,8 @@ export default [
     type: PERSONAL,
     url: 'https://dadjokes.samrose3.com',
     repoUrl: 'https://github.com/samrose3/dadjokes',
-    imageSrc: images.dadjokes,
-    projectImage: projectImages.dadjokes,
-    placeholderSrc: placeholders.dadjokes,
+    imageSrc: 'dadjokes-repo.png',
+    projectImage: 'dadjokes.png',
     tags: ['python', 'django', 'postgres', 'reddit', 'html', 'css', 'js', 'react'],
     description: `
       An utterly fantastic Slack integration for classic dad jokes.\n
@@ -185,9 +173,8 @@ export default [
     type: PERSONAL,
     url: 'https://eventhunt-samrose.herokuapp.com',
     repoUrl: 'https://github.com/samrose3/eventhunt',
-    imageSrc: images.eventhunt,
-    projectImage: projectImages.eventhunt,
-    placeholderSrc: placeholders.eventhunt,
+    imageSrc: 'eventhunt-repo.png',
+    projectImage: 'eventhunt.png',
     tags: ['python', 'django', 'eventbrite', 'html', 'css', 'js', 'react'],
     description: `
       Filter by categories of interest to find the right events for you in your area. This is a web app in progress. I created it for learning purposes, to practice and experiment with a Django and React stack. I've enjoyed working with the combination and find the development workflow to be my favorite so far.`,
@@ -200,9 +187,8 @@ export default [
     type: PERSONAL,
     url: 'https://atom.io/packages/autocomplete-ascii-emoji',
     repoUrl: 'https://github.com/samrose3/autocomplete-ascii-emoji',
-    imageSrc: images.autocomplete,
-    placeholderSrc: placeholders.autocomplete,
-    projectImage: images.autocomplete,
+    imageSrc: 'autocomplete.gif',
+    projectImage: 'autocomplete.gif',
     tags: ['coffescript'],
     description: `
       Adds ASCII emoji autocompletion to autocomplete-plus ¯\\_(ツ)_/¯.
@@ -218,8 +204,8 @@ export default [
     type: PERSONAL,
     url: 'https://github.com/samrose3/trex-runner',
     repoUrl: 'https://github.com/samrose3/trex-runner',
-    imageSrc: images.TrexRunner,
-    projectImage: images.TrexRunner,
+    imageSrc: 'trex-runner.png',
+    projectImage: 'trex-runner.png',
     tags: ['vhdl'],
     description: 'VHDL implementation of the T-Rex game from Google Chrome.',
   },

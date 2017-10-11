@@ -4,6 +4,7 @@ import Vue from 'vue';
 import ScrollReveal from 'scrollreveal';
 import VueScrollTo from 'vue-scrollto';
 import Buefy from 'buefy';
+import cloudinary from 'cloudinary-core';
 import moment from 'moment';
 
 import 'core-js';
@@ -21,6 +22,7 @@ Vue.use(VueScrollTo, {
 });
 
 window.sr = ScrollReveal();
+window.cl = new cloudinary.Cloudinary({ cloud_name: 'samrose3', secure: true });
 Vue.component('separator', Separator);
 Vue.prototype.moment = moment;
 

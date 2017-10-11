@@ -58,7 +58,7 @@
     <transition name="kern">
       <div v-if="activeProject" class="project-image"
         :key="activeProject.projectImage"
-        :style="{ 'background-image': `url(${activeProject.projectImage})` }"
+        :style="{ 'background-image': `url(${projectImgUrl})` }"
         @click="toggleDetails(!showDetails)">
       </div>
     </transition>
@@ -75,6 +75,9 @@ export default {
       'activeProject',
       'showDetails',
     ]),
+    projectImgUrl() {
+      return cl.url(this.activeProject.projectImage);
+    },
   },
   watch: {
     showDetails: 'projectListWidth',
