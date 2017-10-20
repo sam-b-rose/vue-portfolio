@@ -1,6 +1,6 @@
 <template>
   <section id="fork">
-      <div class="hero is-primary">
+      <div class="hero is-dark">
         <div class="hero-body has-text-centered">
           <h2 class="title is-3">
             Want to Vue the code for this portfolio?
@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="block reveal">
-            <a class="button grow is-dark"
+            <a class="button grow"
               target="_blank"
               rel="noopener"
               href="https://github.com/samrose3/vue-portfolio">
