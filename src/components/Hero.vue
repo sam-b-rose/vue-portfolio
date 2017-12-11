@@ -80,7 +80,7 @@ export default {
   }
 
   .header-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)),url('http://res.cloudinary.com/samrose3/image/upload/v1507668120/good-vibes.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)),url('https://res.cloudinary.com/samrose3/image/upload/v1507668120/good-vibes.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 50%;
