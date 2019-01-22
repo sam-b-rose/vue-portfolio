@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="block reveal">
-            <a class="button grow"
+            <a class="button"
               target="_blank"
               rel="noopener"
               href="https://github.com/samrose3/vue-portfolio">

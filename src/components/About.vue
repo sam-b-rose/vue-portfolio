@@ -7,16 +7,15 @@
       <h2 class="title is-2">About</h2>
       <separator></separator>
       <div class="about-text block">
-        I am a full-time undergraduate at the
-        <a href="https://utk.edu" target="_blank" rel="noopener">University of Tennessee Knoxville</a>
-        studying
-        <a href="http://catalog.utk.edu/preview_program.php?catoid=20&poid=8409" target="_blank" rel="noopener">Computer Engineering</a>
-        . I am currently participating in a team-based design internship called
-        <a href="https://www.ibm.com/design/blog-page.shtml?a-descent-into-the-maelstrom" class="links" target="_blank" rel="noopener">IBM Maelstrom</a>
-        in Austin, TX. I am seeking full-time employment following graduation in December 2017.
+        <p>I’m a passionate User Experience designer creating experiences for mobile, web, and software products. I'm dedicated to promoting the discipline of user experience design.</p>
+        <br>
+        <p>I am currently located in Austin, TX leading UX and prototyping initiatives on
+        <a href="https://www.ibm.com/products/cloud-private-for-data" target="_blank" rel="noopener">
+        IBM Cloud Private for Data
+        </a> to better design an on-premise data platform for enterprise.</p>
       </div>
       <div class="block">
-        <a class="button grow is-dark"
+        <a class="button is-dark"
           href="https://samrose3.github.io"
           target="_blank"
           rel="noopener">

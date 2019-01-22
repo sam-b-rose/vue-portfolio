@@ -2,7 +2,6 @@
   <div id="app" v-cloak>
     <hero></hero>
     <about></about>
-    <do></do>
     <projects></projects>
     <skills></skills>
     <fork></fork>
