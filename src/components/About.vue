@@ -7,7 +7,7 @@
       <h2 class="title is-2">About</h2>
       <separator></separator>
       <div class="about-text block">
-        <p>I’m a passionate User Experience designer creating experiences for mobile, web, and software products. I'm dedicated to promoting the discipline of user experience design.</p>
+        <p>I’m a passionate Software Engineer creating experiences for mobile and web products. I'm dedicated to promoting the discipline of user experience design and delivering quality software.</p>
         <br>
         <p>I am currently located in Austin, TX leading UX and prototyping initiatives on
         <a href="https://www.ibm.com/products/cloud-private-for-data" target="_blank" rel="noopener">
